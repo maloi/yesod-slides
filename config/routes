@@ -1,0 +1,19 @@
+/static StaticR Static getStatic
+/auth   AuthR   Auth   getAuth
+
+/favicon.ico FaviconR GET
+/robots.txt RobotsR GET
+
+/ RootR GET
+
+/presentations AllPresentationsR GET
+/presentation NewPresentationR POST
+/presentation/#PresentationId PresentationR GET
+/presentation/edit/#PresentationId EditPresentationR GET POST
+/presentation/delete/#PresentationId DelPresentationR GET
+
+/slides AllSlidesR GET
+/slide/new/#PresentationId NewSlideR POST
+/slide/#SlideId SlideR GET
+/slide/edit/#SlideId EditSlideR GET POST
+/slide/delete/#SlideId DelSlideR GET

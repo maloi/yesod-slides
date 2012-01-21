@@ -1,0 +1,5 @@
+<div>#{slideTitle slide}
+<form method=post action=@{EditSlideR slideId} enctype=#{enctype}>
+  ^{formContent}
+  <input type=submit>
+

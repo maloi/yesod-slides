@@ -1,0 +1,11 @@
+<div>#{presentationName presentation}
+<form method=post action=@{EditPresentationR presentationId} enctype=#{enctypePresentation}>
+  ^{formContentPresentation}
+  <input type=submit>
+$forall slide <- slides
+  <div>#{slideTitle (snd slide)}
+      <a href=@{EditSlideR (fst slide)}>Edit
+      <a href=@{DelSlideR (fst slide)}>Delete
+<form method=post action=@{NewSlideR presentationId} enctype=#{enctypeSlide}>
+  ^{formContentSlide}
+  <input type=submit>

@@ -1,0 +1,4 @@
+$forall slide <- slides
+  <div>#{slideTitle (snd slide)}
+      <a href=@{EditSlideR (fst slide)}>Edit
+      <a href=@{DelSlideR (fst slide)}>Delete

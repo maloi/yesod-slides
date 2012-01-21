@@ -1,0 +1,19 @@
+<header>
+  <h1 id=slideTitle>#{slideTitle slide}
+  <small id=slideMeter>
+    <meter value=#{slidePageNumber slide} min=0 max=#{slidePageMax}>
+    <span id=slideCount>#{slidePageNumber slide}/#{slidePageMax}
+<div id=slideContent class=example-right>
+  #{markdownToHtml $ slideContent slide}
+<div id=navigation>
+  $maybe prev <- prevSlide
+    <a href=@{SlideR (fst prev)}>
+      <button class="button green">Previous
+  $nothing
+  $maybe next <- nextSlide
+    <a href=@{SlideR (fst next)}>
+      <button class="button green">Next
+  $nothing
+<footer>
+  <small id=slideTimer>
+  <small id=slideEdit>
