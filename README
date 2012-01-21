@@ -1,0 +1,4 @@
+Simple slide app with some slides aboud yesod in the Sqlite DB.
+- Bad URIs
+- No cascade delete
+- etc. 
