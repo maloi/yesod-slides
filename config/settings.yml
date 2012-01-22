@@ -1,5 +1,5 @@
 Default: &defaults
-  host: "localhost"
+  host: "146.52.9.59"
   port: 3000
 
 Development:
